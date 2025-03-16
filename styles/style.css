@@ -1,0 +1,330 @@
+/* *global styles */
+
+
+html {
+  scroll-padding-top:55px ;
+}
+
+body {
+  text-transform: capitalize;
+  background-color: #eee;
+}
+
+:root {
+  --main-color: #007aff;
+  --light-color: #f0f8ff;
+  --tran:0.2s ease-in;
+}
+
+/* *===== header section =====  */
+
+.header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(16, 8, 8, 0.5)
+    ),
+    url("../images/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header-text h1 {
+  color: var(--light-color);
+  font-size: 3rem;
+}
+
+.header-text h4 {
+  color: var(--light-color);
+  font-size: 2.3rem;
+}
+
+
+/* * navbar */
+
+
+.dropdown-item:hover {
+  color: var(--main-color);
+}
+
+.nav-link {
+  color: var(--light-color);
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in;
+  
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+}
+
+.nav-item::after {
+  content: '';
+  width: 0;
+  background-color: var(--main-color);
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left:0; right: 0;   margin: auto;
+
+  transition: width 0.4s ease-in-out;
+}
+
+.nav-item:hover{
+  color: var(--main-color);
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.navbar a.active::after {
+  content: '';
+  width: 100%;
+  background-color: var(--main-color);
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+
+
+
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
+
+/* *about */
+
+.pattern {
+  width: 200px;
+  height: 200px;
+}
+
+
+.about .main-heading::after {
+  content: '';
+  width: 15%;
+  background-color: var(--main-color);
+  height: 3px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+}
+
+
+.card .icon {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  transition: background-color 0.2s ease-in;
+  border: 10px solid var(--main-color); 
+
+}
+
+
+.card-body .icon:hover{
+  background-color: var(--main-color);
+  border: 10px solid var(--light-color); 
+}
+
+
+/* *services */
+
+
+
+
+
+
+/* *experience */
+
+.experience {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 122, 255, 0.4),
+      var(--main-color)
+    ),
+    url("../images/counters-bg.jpg");
+  
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.experience .container .row {
+  min-height: 50vh;
+}
+
+.experience .icon {
+  width: 100px;
+  height: 100px;
+  transition: background-color 0.2s ease-in;
+  border: 10px solid var(--light-color); 
+}
+
+
+.experience .icon:hover{
+  border: 10px solid var(--light-color); 
+}
+
+
+/* * portfolio */
+
+.portfolio .sub-heading::after {
+  content: '';
+  width: 10%;
+  background-color: var(--main-color);
+  height: 3px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.card-port i {
+  border-radius: 40%;
+  border: 2px solid var(--main-color);
+}
+
+
+.portfolio .card {
+  overflow: hidden;
+  }
+
+.portfolio img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.8s ease-in-out;
+}
+
+.portfolio img:hover {
+
+transform: scale(1.2);
+}
+
+/* *slider */
+
+
+.slider {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 122, 255, 0.4),
+      var(--main-color)
+    ),
+    url("../images/overlay-bg.jpg");
+  
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.slider .container .row  {
+  min-height: 50vh;
+}
+
+
+.carousel-item  img {
+  width: 100px;
+  height: 100px;
+}
+
+.carousel-item p {
+  color: #efe9e9;
+}
+
+
+/* *blog */
+
+.blog .sub-heading::after {
+  content: '';
+  width: 10%;
+  background-color: var(--main-color);
+  height: 3px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+
+
+.img-foot {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.foot-a {
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(38, 38, 38);
+}
+
+
+
+
+
+/* *contact */
+
+
+.contact {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 122, 255, 0.4),
+      var(--main-color)
+    ),
+    url("../images/overlay-bg.jpg");
+  
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.contact .main-heading::after {
+  content: '';
+  width: 10%;
+  background-color: var(--main-color);
+  height: 3px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+}
+
+.spo {
+  color: #696767;
+}
+
+
+
+
+.contact .social i {
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+}
+
+
